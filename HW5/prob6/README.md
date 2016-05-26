@@ -1,20 +1,12 @@
-1. Both [.Java] and [.jar files with .class] are included
+###Run as following:
 
-2. If you want to compile the .Java file to .jar by yourself, 
-upload the .java file to your local hdfs. Otherwise, don't upload the .java
-and upload .jar files with .class and skip to step 4.
+&nbsp;
 
-3. Compile the program and make a jar file out of it with the following commands: 
+1. chmod +x run_prob6.sh
+2. ./run_prob6.sh
 
-hadoop com.sun.tools.javac.Main filename.java 
+&nbsp;
 
-jar cf anyname.jar filename*.class 
-
-4. Upload the web-Google.txt to your hdfs
-
-5. Run the program with web-Google.txt as the input file
-
-hadoop jar filename.jar filename directorytoweb-Google.txt directoryofoutput
-
-Note: anyname means you can put any name for it, it doesnt matter.
-filename means you have to have the same name as whatever name you specified. 
+Note:
+- Change the java libary version for your machine
+- Try to change the name of output in run_prob6.sh at the last line when compiled
